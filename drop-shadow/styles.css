@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #111827;
+  padding: 10rem 1.5rem;
+  max-width: 850px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.circle {
+  background: #242a36;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+a > svg {
+  color: white;
+}
+
+.circle:hover {
+  transition: all 500ms linear;
+  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.circle:hover:nth-child(1) {
+  filter: drop-shadow(0 0 12px rgb(196, 0, 255));
+}
+
+.circle:hover:nth-child(2) {
+  filter: drop-shadow(0 0 12px rgb(45, 186, 78));
+}
+
+.circle:hover:nth-child(3) {
+  filter: drop-shadow(0 0 12px rgb(207, 210, 0));
+}
+
+.circle:hover:nth-child(4) {
+  filter: drop-shadow(0 0 12px rgb(0, 154, 210));
+}
